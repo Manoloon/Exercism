@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CppProjects/Exercism/Src/space_age.cpp
+space_age.h
+E:/CppProjects/Exercism/Src/space_age.h
+
+E:/CppProjects/Exercism/Src/space_age.h
+map
+-
+
