@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "E:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "E:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\CppProjects\Exercism
+CMAKE_SOURCE_DIR = D:\CppProjects\Exercism
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\CppProjects\Exercism\cmake-build-debug
+CMAKE_BINARY_DIR = D:\CppProjects\Exercism\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = E:\CppProjects\Exercism\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CppProjects\Exercism\cmake-build-debug\CMakeFiles E:\CppProjects\Exercism\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CppProjects\Exercism\cmake-build-debug\CMakeFiles D:\CppProjects\Exercism\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\CppProjects\Exercism\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CppProjects\Exercism\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,6 +127,30 @@ Exercism: cmake_check_build_system
 Exercism/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/build
 .PHONY : Exercism/fast
+
+Src/Triangles.obj: Src/Triangles.cpp.obj
+.PHONY : Src/Triangles.obj
+
+# target to build an object file
+Src/Triangles.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj
+.PHONY : Src/Triangles.cpp.obj
+
+Src/Triangles.i: Src/Triangles.cpp.i
+.PHONY : Src/Triangles.i
+
+# target to preprocess a source file
+Src/Triangles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Triangles.cpp.i
+.PHONY : Src/Triangles.cpp.i
+
+Src/Triangles.s: Src/Triangles.cpp.s
+.PHONY : Src/Triangles.s
+
+# target to generate assembly for a file
+Src/Triangles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Triangles.cpp.s
+.PHONY : Src/Triangles.cpp.s
 
 Src/space_age.obj: Src/space_age.cpp.obj
 .PHONY : Src/space_age.obj
@@ -185,6 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Exercism
+	@echo ... Src/Triangles.obj
+	@echo ... Src/Triangles.i
+	@echo ... Src/Triangles.s
 	@echo ... Src/space_age.obj
 	@echo ... Src/space_age.i
 	@echo ... Src/space_age.s
