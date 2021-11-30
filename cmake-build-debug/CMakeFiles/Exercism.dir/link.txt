@@ -1,3 +1,3 @@
-"E:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Exercism.dir/objects.a
-E:\Public\mingw32\bin\ar.exe cr CMakeFiles\Exercism.dir/objects.a @CMakeFiles\Exercism.dir\objects1.rsp
-E:\Public\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Exercism.dir/objects.a -Wl,--no-whole-archive -o Exercism.exe -Wl,--out-implib,libExercism.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Exercism.dir\linklibs.rsp
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Exercism.dir/objects.a
+C:\mingw32\bin\ar.exe cr CMakeFiles\Exercism.dir/objects.a @CMakeFiles\Exercism.dir\objects1.rsp
+C:\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Exercism.dir/objects.a -Wl,--no-whole-archive -o Exercism.exe -Wl,--out-implib,libExercism.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Exercism.dir\linklibs.rsp
