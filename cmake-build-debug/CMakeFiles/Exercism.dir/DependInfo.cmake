@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/CppProjects/Exercism/Src/space_age.cpp" "E:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/Src/space_age.cpp.obj"
-  "E:/CppProjects/Exercism/main.cpp" "E:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/main.cpp.obj"
+  "D:/CppProjects/Exercism/Src/Triangles.cpp" "D:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj"
+  "D:/CppProjects/Exercism/Src/space_age.cpp" "D:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/Src/space_age.cpp.obj"
+  "D:/CppProjects/Exercism/main.cpp" "D:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

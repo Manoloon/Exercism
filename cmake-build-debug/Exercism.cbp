@@ -8,88 +8,94 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="E:/CppProjects/Exercism/cmake-build-debug"/>
+				<Option working_dir="D:/CppProjects/Exercism/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Exercism">
-				<Option output="E:/CppProjects/Exercism/cmake-build-debug/Exercism.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/CppProjects/Exercism/cmake-build-debug"/>
+				<Option output="D:/CppProjects/Exercism/cmake-build-debug/Exercism.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CppProjects/Exercism/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include-fixed"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercism"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercism"/>
+					<CompileFile command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Exercism/fast">
-				<Option output="E:/CppProjects/Exercism/cmake-build-debug/Exercism.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/CppProjects/Exercism/cmake-build-debug"/>
+				<Option output="D:/CppProjects/Exercism/cmake-build-debug/Exercism.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CppProjects/Exercism/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include-fixed"/>
-					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="E:/Public/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercism/fast"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercism/fast"/>
+					<CompileFile command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="E:/CppProjects/Exercism/cmake-build-debug"/>
+				<Option working_dir="D:/CppProjects/Exercism/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="E:/CppProjects/Exercism/cmake-build-debug"/>
+				<Option working_dir="D:/CppProjects/Exercism/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;E:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Public/mingw32/bin/mingw32-make.exe -f &quot;D:/CppProjects/Exercism/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/CppProjects/Exercism/Src/space_age.cpp">
+		<Unit filename="D:/CppProjects/Exercism/Src/Triangles.cpp">
 			<Option target="Exercism"/>
 		</Unit>
-		<Unit filename="E:/CppProjects/Exercism/Src/space_age.h">
+		<Unit filename="D:/CppProjects/Exercism/Src/Triangles.h">
 			<Option target="Exercism"/>
 		</Unit>
-		<Unit filename="E:/CppProjects/Exercism/main.cpp">
+		<Unit filename="D:/CppProjects/Exercism/Src/space_age.cpp">
 			<Option target="Exercism"/>
 		</Unit>
-		<Unit filename="E:/CppProjects/Exercism/CMakeLists.txt">
+		<Unit filename="D:/CppProjects/Exercism/Src/space_age.h">
+			<Option target="Exercism"/>
+		</Unit>
+		<Unit filename="D:/CppProjects/Exercism/main.cpp">
+			<Option target="Exercism"/>
+		</Unit>
+		<Unit filename="D:/CppProjects/Exercism/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
