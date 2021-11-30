@@ -11,21 +11,19 @@
 
 #ifndef EXERCISM_TRIANGLES_H
 #define EXERCISM_TRIANGLES_H
-#include <vector>
 
-class Triangles
+
+namespace triangle
 {
-    explicit
-    Triangles(std::vector<int>{x,y,z});
+    enum class flavor
+            {
+                equilateral,isosceles,scalene
+            };
+        flavor kind(double x,double y,double z);
 
-     /**
-     *     REQUIRE(triangle::flavor::equilateral == triangle::kind(10, 10, 10));
-     *   TEST_CASE("isosceles_triangles_have_last_two_sides_equal")
-    *   REQUIRE(triangle::flavor::isosceles == triangle::kind(3, 4, 4));
-    *TEST_CASE("isosceles_triangles_have_first_and_last_sides_equal")
-      * REQUIRE(triangle::flavor::scalene == triangle::kind(0.4, 0.6, 0.3));
-*/
-};
+        bool AnySideNegative(double x,double y, double z);
+        bool TriangleEquality(double x,double y, double z);
+}
 
 
 #endif //EXERCISM_TRIANGLES_H

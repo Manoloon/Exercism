@@ -1,11 +1,10 @@
 #include <iostream>
-#include "Src/space_age.h"
-#include <iomanip>
+#include "Src/Triangles.h"
+#include <string>
 
 int main()
 {
-    space_age Space(3000000000);
-    std::cout <<  Space.on_earth()<< std::endl;
-    std::cout <<  Space.on_saturn()<< std::endl;
+    bool result (triangle::flavor::equilateral == triangle::kind(10,0,1));
+    std::cout << result;
     return 0;
 }
