@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj"
+  "CMakeFiles/Exercism.dir/Src/grains.cpp.obj"
   "CMakeFiles/Exercism.dir/Src/space_age.cpp.obj"
   "CMakeFiles/Exercism.dir/main.cpp.obj"
   "Exercism.exe"

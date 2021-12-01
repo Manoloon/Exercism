@@ -152,6 +152,30 @@ Src/Triangles.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Triangles.cpp.s
 .PHONY : Src/Triangles.cpp.s
 
+Src/grains.obj: Src/grains.cpp.obj
+.PHONY : Src/grains.obj
+
+# target to build an object file
+Src/grains.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/grains.cpp.obj
+.PHONY : Src/grains.cpp.obj
+
+Src/grains.i: Src/grains.cpp.i
+.PHONY : Src/grains.i
+
+# target to preprocess a source file
+Src/grains.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/grains.cpp.i
+.PHONY : Src/grains.cpp.i
+
+Src/grains.s: Src/grains.cpp.s
+.PHONY : Src/grains.s
+
+# target to generate assembly for a file
+Src/grains.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/grains.cpp.s
+.PHONY : Src/grains.cpp.s
+
 Src/space_age.obj: Src/space_age.cpp.obj
 .PHONY : Src/space_age.obj
 
@@ -212,6 +236,9 @@ help:
 	@echo ... Src/Triangles.obj
 	@echo ... Src/Triangles.i
 	@echo ... Src/Triangles.s
+	@echo ... Src/grains.obj
+	@echo ... Src/grains.i
+	@echo ... Src/grains.s
 	@echo ... Src/space_age.obj
 	@echo ... Src/space_age.i
 	@echo ... Src/space_age.s

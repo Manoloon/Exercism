@@ -86,6 +86,12 @@
 		<Unit filename="E:/CppProjects/Exercism/Src/Triangles.h">
 			<Option target="Exercism"/>
 		</Unit>
+		<Unit filename="E:/CppProjects/Exercism/Src/grains.cpp">
+			<Option target="Exercism"/>
+		</Unit>
+		<Unit filename="E:/CppProjects/Exercism/Src/grains.h">
+			<Option target="Exercism"/>
+		</Unit>
 		<Unit filename="E:/CppProjects/Exercism/Src/space_age.cpp">
 			<Option target="Exercism"/>
 		</Unit>
