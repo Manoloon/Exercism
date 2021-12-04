@@ -1,10 +1,10 @@
 #include <iostream>
-#include "Src/Triangles.h"
+#include "Src/Grains.h"
 #include <string>
 
 int main()
 {
-    bool result (triangle::flavor::equilateral == triangle::kind(10,0,1));
-    std::cout << result;
+   std::cout << "Get square " << grains::square(32) << std::endl;
+    std::cout << "Get square total" << grains::total;
     return 0;
 }

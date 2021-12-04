@@ -16,13 +16,10 @@ how many grains were on a given square, and
 #ifndef EXERCISM_GRAINS_H
 #define EXERCISM_GRAINS_H
 
+
 namespace grains {
-    class grains
-    {
-    public:
-        double square(int grain);
-        double total();
-    };
+        unsigned long long square(int GetSquare);
+        unsigned long long total();
 }  // namespace grains
 
 #endif //EXERCISM_GRAINS_H
