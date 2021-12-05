@@ -128,6 +128,30 @@ Exercism/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/build
 .PHONY : Exercism/fast
 
+Src/Raindrops.obj: Src/Raindrops.cpp.obj
+.PHONY : Src/Raindrops.obj
+
+# target to build an object file
+Src/Raindrops.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj
+.PHONY : Src/Raindrops.cpp.obj
+
+Src/Raindrops.i: Src/Raindrops.cpp.i
+.PHONY : Src/Raindrops.i
+
+# target to preprocess a source file
+Src/Raindrops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Raindrops.cpp.i
+.PHONY : Src/Raindrops.cpp.i
+
+Src/Raindrops.s: Src/Raindrops.cpp.s
+.PHONY : Src/Raindrops.s
+
+# target to generate assembly for a file
+Src/Raindrops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Raindrops.cpp.s
+.PHONY : Src/Raindrops.cpp.s
+
 Src/Triangles.obj: Src/Triangles.cpp.obj
 .PHONY : Src/Triangles.obj
 
@@ -233,6 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Exercism
+	@echo ... Src/Raindrops.obj
+	@echo ... Src/Raindrops.i
+	@echo ... Src/Raindrops.s
 	@echo ... Src/Triangles.obj
 	@echo ... Src/Triangles.i
 	@echo ... Src/Triangles.s

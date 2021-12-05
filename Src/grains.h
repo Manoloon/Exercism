@@ -18,7 +18,7 @@ how many grains were on a given square, and
 
 
 namespace grains {
-        unsigned long long square(int GetSquare);
+        unsigned long long square(int squareIndex);
         unsigned long long total();
 }  // namespace grains
 

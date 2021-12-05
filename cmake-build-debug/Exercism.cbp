@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/CppProjects/Exercism/Src/Raindrops.cpp">
+			<Option target="Exercism"/>
+		</Unit>
+		<Unit filename="E:/CppProjects/Exercism/Src/Raindrops.h">
+			<Option target="Exercism"/>
+		</Unit>
 		<Unit filename="E:/CppProjects/Exercism/Src/Triangles.cpp">
 			<Option target="Exercism"/>
 		</Unit>

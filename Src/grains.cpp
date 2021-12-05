@@ -6,12 +6,12 @@
 
 namespace grains
 {
-    unsigned long long square(int GetSquare)
+    unsigned long long square(int squareIndex)
     {
         unsigned long long count=1;
-        for(int i=1;i<GetSquare;i++)
+        for(int i=1;i<squareIndex;i++)
         {
-           count = count +count;
+           count *=2;
         }
         return 0ULL +count;
     }
