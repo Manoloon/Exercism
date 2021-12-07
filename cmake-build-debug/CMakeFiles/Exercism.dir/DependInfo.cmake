@@ -4,24 +4,15 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/CppProjects/Exercism/Src/Raindrops.cpp" "E:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj"
-  "E:/CppProjects/Exercism/Src/Triangles.cpp" "E:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj"
-  "E:/CppProjects/Exercism/Src/grains.cpp" "E:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/Src/grains.cpp.obj"
-  "E:/CppProjects/Exercism/Src/space_age.cpp" "E:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/Src/space_age.cpp.obj"
-  "E:/CppProjects/Exercism/main.cpp" "E:/CppProjects/Exercism/cmake-build-debug/CMakeFiles/Exercism.dir/main.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "E:/CppProjects/Exercism/Src/Raindrops.cpp" "CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj" "gcc" "CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj.d"
+  "E:/CppProjects/Exercism/Src/Triangles.cpp" "CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj" "gcc" "CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj.d"
+  "E:/CppProjects/Exercism/Src/grains.cpp" "CMakeFiles/Exercism.dir/Src/grains.cpp.obj" "gcc" "CMakeFiles/Exercism.dir/Src/grains.cpp.obj.d"
+  "E:/CppProjects/Exercism/Src/space_age.cpp" "CMakeFiles/Exercism.dir/Src/space_age.cpp.obj" "gcc" "CMakeFiles/Exercism.dir/Src/space_age.cpp.obj.d"
+  "E:/CppProjects/Exercism/main.cpp" "CMakeFiles/Exercism.dir/main.cpp.obj" "gcc" "CMakeFiles/Exercism.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

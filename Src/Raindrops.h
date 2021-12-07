@@ -24,11 +24,7 @@ Examples
 #define EXERCISM_RAINDROPS_H
 #include <string>
 namespace raindrops {
-    class Raindrops
-    {
-    public:
         std::string convert(int newNumber);
-    };
 }
 
 

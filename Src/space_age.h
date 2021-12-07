@@ -5,6 +5,7 @@
 #ifndef EXERCISM_SPACE_AGE_H
 #define EXERCISM_SPACE_AGE_H
 #include <map>
+#include <string>
 
 class space_age
 {

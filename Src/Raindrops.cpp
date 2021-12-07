@@ -3,13 +3,29 @@
 //
 
 #include "Raindrops.h"
+#include <string>
 
-class Raindrops
+namespace raindrops
 {
-
-};
-
-std::string raindrops::Raindrops::convert(int newNumber)
-{
-    return std::__cxx11::string();
+    std::string convert(int newNumber)
+    {
+        std::string result="";
+        if(newNumber%3==0)
+        {
+            result+="Pling";
+        }
+        if(newNumber%5==0)
+        {
+            result+="Plang";
+        }
+        if (newNumber % 7 == 0) {
+            result+= "Plong";
+        }
+        if (result =="")
+        {
+            result = std::to_string(newNumber);
+        }
+        return result;
+    }
 }
+

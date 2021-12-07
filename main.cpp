@@ -1,10 +1,10 @@
 #include <iostream>
 #include "Src/Grains.h"
+#include "Src/Raindrops.h"
 #include <string>
 
 int main()
 {
-   std::cout << "Get square " << grains::square(32) << std::endl;
-    std::cout << "Get square total" << grains::total;
+   std::cout << "raindrops " <<  raindrops::convert(1) << std::endl;
     return 0;
 }
