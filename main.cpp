@@ -5,6 +5,6 @@
 
 int main()
 {
-   std::cout << "raindrops " <<  raindrops::convert(1) << std::endl;
+   std::cout << "raindrops " <<  raindrops::convert(34) << std::endl;
     return 0;
 }

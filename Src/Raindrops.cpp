@@ -9,7 +9,7 @@ namespace raindrops
 {
     std::string convert(int newNumber)
     {
-        std::string result="";
+        std::string result;
         if(newNumber%3==0)
         {
             result+="Pling";
@@ -18,10 +18,11 @@ namespace raindrops
         {
             result+="Plang";
         }
-        if (newNumber % 7 == 0) {
+        if(newNumber % 7 == 0)
+        {
             result+= "Plong";
         }
-        if (result =="")
+        if(result.empty())
         {
             result = std::to_string(newNumber);
         }
