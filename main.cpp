@@ -4,7 +4,7 @@
 
 int main()
 {
-   std::string frase = "the quick brown fox jumps over the lazy dog";
+   //std::string frase = "\"Five quacking Zephyrs jolt my wax bed.\"";
    std::cout << "is pangram? " <<  pangram::is_pangram(frase) << std::endl;
    return 0;
 }

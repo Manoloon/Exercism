@@ -8,34 +8,34 @@
 #include <vector>
 
 namespace pangram {
-bool is_pangram(std::string& Phrase)
-{
-    std::vector<bool>Marked(26, false);
-    int index;
-    for(int i=0;i<Phrase.size();i++)
+    bool is_pangram(std::string& Phrase)
     {
-        if('A' <= Phrase[i] && Phrase[i] <= 'Z')
+        std::vector<bool>Marked(26, false);
+        int index;
+        for(auto it:Phrase)
         {
-            index=Phrase[i]-'A';
+            if('A' <= it && it <= 'Z')
+            {
+                index=it-'A';
+            }
+            else if ('a' <= it && it <= 'z')
+            {
+                index= it-'a';
+            }
+            else
+            {
+                continue;
+            }
+            Marked[index]=true;
         }
-        else if ('a' <= Phrase[i] && Phrase[i] <= 'z')
+        for (int i=0;i<25;i++)
         {
-            index=Phrase[i]-'a';
+            if(!Marked[i])
+            {
+                return (false);
+            }
         }
-        else
-        {
-            continue;
-        }
-        Marked[index]=true;
+        return (true);
     }
-    for (int i=0;i<25;i++)
-    {
-        if(Marked[i]== false)
-        {
-            return (false);
-        }
-    }
-    return (true);
-}
 }
 #endif //EXERCISM_PANGRAM_H
