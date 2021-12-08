@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "E:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "E:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\CppProjects\Exercism
+CMAKE_SOURCE_DIR = D:\CppProjects\Exercism
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\CppProjects\Exercism\cmake-build-debug
+CMAKE_BINARY_DIR = D:\CppProjects\Exercism\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Exercism.dir/depend.make
@@ -71,72 +71,72 @@ include CMakeFiles/Exercism.dir/flags.make
 CMakeFiles/Exercism.dir/main.cpp.obj: CMakeFiles/Exercism.dir/flags.make
 CMakeFiles/Exercism.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Exercism.dir/main.cpp.obj: CMakeFiles/Exercism.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Exercism.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/main.cpp.obj -MF CMakeFiles\Exercism.dir\main.cpp.obj.d -o CMakeFiles\Exercism.dir\main.cpp.obj -c E:\CppProjects\Exercism\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Exercism.dir/main.cpp.obj"
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/main.cpp.obj -MF CMakeFiles\Exercism.dir\main.cpp.obj.d -o CMakeFiles\Exercism.dir\main.cpp.obj -c D:\CppProjects\Exercism\main.cpp
 
 CMakeFiles/Exercism.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exercism.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CppProjects\Exercism\main.cpp > CMakeFiles\Exercism.dir\main.cpp.i
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CppProjects\Exercism\main.cpp > CMakeFiles\Exercism.dir\main.cpp.i
 
 CMakeFiles/Exercism.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercism.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CppProjects\Exercism\main.cpp -o CMakeFiles\Exercism.dir\main.cpp.s
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CppProjects\Exercism\main.cpp -o CMakeFiles\Exercism.dir\main.cpp.s
 
 CMakeFiles/Exercism.dir/Src/space_age.cpp.obj: CMakeFiles/Exercism.dir/flags.make
 CMakeFiles/Exercism.dir/Src/space_age.cpp.obj: ../Src/space_age.cpp
 CMakeFiles/Exercism.dir/Src/space_age.cpp.obj: CMakeFiles/Exercism.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Exercism.dir/Src/space_age.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/Src/space_age.cpp.obj -MF CMakeFiles\Exercism.dir\Src\space_age.cpp.obj.d -o CMakeFiles\Exercism.dir\Src\space_age.cpp.obj -c E:\CppProjects\Exercism\Src\space_age.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Exercism.dir/Src/space_age.cpp.obj"
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/Src/space_age.cpp.obj -MF CMakeFiles\Exercism.dir\Src\space_age.cpp.obj.d -o CMakeFiles\Exercism.dir\Src\space_age.cpp.obj -c D:\CppProjects\Exercism\Src\space_age.cpp
 
 CMakeFiles/Exercism.dir/Src/space_age.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exercism.dir/Src/space_age.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CppProjects\Exercism\Src\space_age.cpp > CMakeFiles\Exercism.dir\Src\space_age.cpp.i
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CppProjects\Exercism\Src\space_age.cpp > CMakeFiles\Exercism.dir\Src\space_age.cpp.i
 
 CMakeFiles/Exercism.dir/Src/space_age.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercism.dir/Src/space_age.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CppProjects\Exercism\Src\space_age.cpp -o CMakeFiles\Exercism.dir\Src\space_age.cpp.s
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CppProjects\Exercism\Src\space_age.cpp -o CMakeFiles\Exercism.dir\Src\space_age.cpp.s
 
 CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj: CMakeFiles/Exercism.dir/flags.make
 CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj: ../Src/Triangles.cpp
 CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj: CMakeFiles/Exercism.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj -MF CMakeFiles\Exercism.dir\Src\Triangles.cpp.obj.d -o CMakeFiles\Exercism.dir\Src\Triangles.cpp.obj -c E:\CppProjects\Exercism\Src\Triangles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj"
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/Src/Triangles.cpp.obj -MF CMakeFiles\Exercism.dir\Src\Triangles.cpp.obj.d -o CMakeFiles\Exercism.dir\Src\Triangles.cpp.obj -c D:\CppProjects\Exercism\Src\Triangles.cpp
 
 CMakeFiles/Exercism.dir/Src/Triangles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exercism.dir/Src/Triangles.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CppProjects\Exercism\Src\Triangles.cpp > CMakeFiles\Exercism.dir\Src\Triangles.cpp.i
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CppProjects\Exercism\Src\Triangles.cpp > CMakeFiles\Exercism.dir\Src\Triangles.cpp.i
 
 CMakeFiles/Exercism.dir/Src/Triangles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercism.dir/Src/Triangles.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CppProjects\Exercism\Src\Triangles.cpp -o CMakeFiles\Exercism.dir\Src\Triangles.cpp.s
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CppProjects\Exercism\Src\Triangles.cpp -o CMakeFiles\Exercism.dir\Src\Triangles.cpp.s
 
 CMakeFiles/Exercism.dir/Src/grains.cpp.obj: CMakeFiles/Exercism.dir/flags.make
 CMakeFiles/Exercism.dir/Src/grains.cpp.obj: ../Src/grains.cpp
 CMakeFiles/Exercism.dir/Src/grains.cpp.obj: CMakeFiles/Exercism.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Exercism.dir/Src/grains.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/Src/grains.cpp.obj -MF CMakeFiles\Exercism.dir\Src\grains.cpp.obj.d -o CMakeFiles\Exercism.dir\Src\grains.cpp.obj -c E:\CppProjects\Exercism\Src\grains.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Exercism.dir/Src/grains.cpp.obj"
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/Src/grains.cpp.obj -MF CMakeFiles\Exercism.dir\Src\grains.cpp.obj.d -o CMakeFiles\Exercism.dir\Src\grains.cpp.obj -c D:\CppProjects\Exercism\Src\grains.cpp
 
 CMakeFiles/Exercism.dir/Src/grains.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exercism.dir/Src/grains.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CppProjects\Exercism\Src\grains.cpp > CMakeFiles\Exercism.dir\Src\grains.cpp.i
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CppProjects\Exercism\Src\grains.cpp > CMakeFiles\Exercism.dir\Src\grains.cpp.i
 
 CMakeFiles/Exercism.dir/Src/grains.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercism.dir/Src/grains.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CppProjects\Exercism\Src\grains.cpp -o CMakeFiles\Exercism.dir\Src\grains.cpp.s
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CppProjects\Exercism\Src\grains.cpp -o CMakeFiles\Exercism.dir\Src\grains.cpp.s
 
 CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj: CMakeFiles/Exercism.dir/flags.make
 CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj: ../Src/Raindrops.cpp
 CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj: CMakeFiles/Exercism.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj -MF CMakeFiles\Exercism.dir\Src\Raindrops.cpp.obj.d -o CMakeFiles\Exercism.dir\Src\Raindrops.cpp.obj -c E:\CppProjects\Exercism\Src\Raindrops.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj"
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Exercism.dir/Src/Raindrops.cpp.obj -MF CMakeFiles\Exercism.dir\Src\Raindrops.cpp.obj.d -o CMakeFiles\Exercism.dir\Src\Raindrops.cpp.obj -c D:\CppProjects\Exercism\Src\Raindrops.cpp
 
 CMakeFiles/Exercism.dir/Src/Raindrops.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exercism.dir/Src/Raindrops.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\CppProjects\Exercism\Src\Raindrops.cpp > CMakeFiles\Exercism.dir\Src\Raindrops.cpp.i
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CppProjects\Exercism\Src\Raindrops.cpp > CMakeFiles\Exercism.dir\Src\Raindrops.cpp.i
 
 CMakeFiles/Exercism.dir/Src/Raindrops.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercism.dir/Src/Raindrops.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\CppProjects\Exercism\Src\Raindrops.cpp -o CMakeFiles\Exercism.dir\Src\Raindrops.cpp.s
+	"E:\Program Files\JetBrains\CLion 2021.2.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CppProjects\Exercism\Src\Raindrops.cpp -o CMakeFiles\Exercism.dir\Src\Raindrops.cpp.s
 
 # Object files for target Exercism
 Exercism_OBJECTS = \
@@ -158,7 +158,7 @@ Exercism.exe: CMakeFiles/Exercism.dir/build.make
 Exercism.exe: CMakeFiles/Exercism.dir/linklibs.rsp
 Exercism.exe: CMakeFiles/Exercism.dir/objects1.rsp
 Exercism.exe: CMakeFiles/Exercism.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Exercism.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CppProjects\Exercism\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Exercism.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Exercism.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -170,6 +170,6 @@ CMakeFiles/Exercism.dir/clean:
 .PHONY : CMakeFiles/Exercism.dir/clean
 
 CMakeFiles/Exercism.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\CppProjects\Exercism E:\CppProjects\Exercism E:\CppProjects\Exercism\cmake-build-debug E:\CppProjects\Exercism\cmake-build-debug E:\CppProjects\Exercism\cmake-build-debug\CMakeFiles\Exercism.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\CppProjects\Exercism D:\CppProjects\Exercism D:\CppProjects\Exercism\cmake-build-debug D:\CppProjects\Exercism\cmake-build-debug D:\CppProjects\Exercism\cmake-build-debug\CMakeFiles\Exercism.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Exercism.dir/depend
 
