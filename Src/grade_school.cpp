@@ -3,12 +3,14 @@
 //
 
 #include "grade_school.h"
+#include <algorithm>
+#include <iostream>
+
 namespace grade_school
 {
-    school::school() {}
-
-   const std::map <int,std::vector<std::string>> & school::roster() const
+  const std::map <int,std::vector<std::string>> & school::roster() const
     {
+
         return m_roster;
     }
 
@@ -35,4 +37,16 @@ namespace grade_school
         }
     }
 
+    void school::add(std::string name, int grade)
+    {
+        if(m_roster.find(grade) == m_roster.end())
+        {
+           m_roster[grade] = {name};
+        }
+        else
+        {
+           m_roster[grade].push_back(name);
+           std::sort(m_roster[grade].begin(),m_roster[grade].end());
+        }
+    }
 }
