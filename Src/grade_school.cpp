@@ -4,13 +4,11 @@
 
 #include "grade_school.h"
 #include <algorithm>
-#include <iostream>
 
 namespace grade_school
 {
   const std::map <int,std::vector<std::string>> & school::roster() const
     {
-
         return m_roster;
     }
 
@@ -24,7 +22,7 @@ namespace grade_school
         m_roster[grade]=newList;
     }
 
-    std::vector<std::string> school::grade(int grade)
+    std::vector<std::string> school::grade(int grade) const
     {
         auto i = m_roster.find(grade);
         if(i == m_roster.end())

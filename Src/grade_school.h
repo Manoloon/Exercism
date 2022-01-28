@@ -19,7 +19,7 @@ namespace grade_school
         void add(std::vector<std::string>names,int grade);
         void add(std::string names,int grade);
         const std::map <int,std::vector<std::string>> & roster() const;
-        std::vector<std::string> grade(int grade);
+        std::vector<std::string> grade(int grade) const;
     };
 }
 #endif //EXERCISM_GRADE_SCHOOL_H
