@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <limits>
+#include "Src/grade_school.h"
 
 int main()
 {
