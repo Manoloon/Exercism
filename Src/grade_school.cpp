@@ -12,20 +12,20 @@ namespace grade_school
         return m_roster;
     }
 
-    std::vector<std::string> school::grade(const int grade) const
-    {
-        auto i = m_roster.find(grade);
+  const std::vector<std::string> & school::grade(const int grade) const
+  {
+        auto const i = m_roster.find(grade);
+        static std::vector<std::string> LocalIterator;
         if(i == m_roster.end())
         {
-            return {};
+            return LocalIterator;
         }
         else
         {
             //But there's a more efficient alternative. Take a look at line 27 and let me know if you need another hint.
-            //return m_roster.at(grade);
             return i->second;
         }
-    }
+  }
     //school::add() takes its first argument by value but does not modify it.
     //F.16 of the C++ Core Guidelines says: "For “in” parameters, pass cheaply-copied types by value and others by reference to const"
     // In small examples like this you will not notice any difference, but if a copy is very expensive or if a function is called often avoiding the copy can be significantly more efficient.
@@ -38,12 +38,10 @@ namespace grade_school
     // That would shorten the code, make it simpler and IMHO easier to read.
     void school::add(const std::string & name, const int grade)
     {
-      auto allStudentOfGrade = m_roster[grade];
-      allStudentOfGrade.push_back(name);
-        if(!std::is_sorted(allStudentOfGrade.begin(), allStudentOfGrade.end()))
-        {
-            std::sort(allStudentOfGrade.begin(),allStudentOfGrade.end());
-        }
+      // no need a copy of the map.
+      auto& allStudentOfGrade = m_roster[grade];
+      auto upperIt =   std::upper_bound(allStudentOfGrade.begin(), allStudentOfGrade.end(), name);
+      allStudentOfGrade.insert(upperIt,name);
       m_roster[grade] = allStudentOfGrade;
     }
 }
