@@ -15,10 +15,10 @@ namespace grade_school
   const std::vector<std::string> & school::grade(const int grade) const
   {
         auto const i = m_roster.find(grade);
-        static std::vector<std::string> LocalIterator;
+        static std::vector<std::string> emptyNameList;
         if(i == m_roster.end())
         {
-            return LocalIterator;
+            return emptyNameList;
         }
         else
         {
@@ -42,6 +42,5 @@ namespace grade_school
       auto& allStudentOfGrade = m_roster[grade];
       auto upperIt =   std::upper_bound(allStudentOfGrade.begin(), allStudentOfGrade.end(), name);
       allStudentOfGrade.insert(upperIt,name);
-      m_roster[grade] = allStudentOfGrade;
     }
 }
