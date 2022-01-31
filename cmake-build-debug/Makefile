@@ -128,6 +128,30 @@ Exercism/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/build
 .PHONY : Exercism/fast
 
+Src/Hamming.obj: Src/Hamming.cpp.obj
+.PHONY : Src/Hamming.obj
+
+# target to build an object file
+Src/Hamming.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Hamming.cpp.obj
+.PHONY : Src/Hamming.cpp.obj
+
+Src/Hamming.i: Src/Hamming.cpp.i
+.PHONY : Src/Hamming.i
+
+# target to preprocess a source file
+Src/Hamming.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Hamming.cpp.i
+.PHONY : Src/Hamming.cpp.i
+
+Src/Hamming.s: Src/Hamming.cpp.s
+.PHONY : Src/Hamming.s
+
+# target to generate assembly for a file
+Src/Hamming.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Hamming.cpp.s
+.PHONY : Src/Hamming.cpp.s
+
 Src/Raindrops.obj: Src/Raindrops.cpp.obj
 .PHONY : Src/Raindrops.obj
 
@@ -175,6 +199,30 @@ Src/Triangles.s: Src/Triangles.cpp.s
 Src/Triangles.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/Triangles.cpp.s
 .PHONY : Src/Triangles.cpp.s
+
+Src/grade_school.obj: Src/grade_school.cpp.obj
+.PHONY : Src/grade_school.obj
+
+# target to build an object file
+Src/grade_school.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/grade_school.cpp.obj
+.PHONY : Src/grade_school.cpp.obj
+
+Src/grade_school.i: Src/grade_school.cpp.i
+.PHONY : Src/grade_school.i
+
+# target to preprocess a source file
+Src/grade_school.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/grade_school.cpp.i
+.PHONY : Src/grade_school.cpp.i
+
+Src/grade_school.s: Src/grade_school.cpp.s
+.PHONY : Src/grade_school.s
+
+# target to generate assembly for a file
+Src/grade_school.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/grade_school.cpp.s
+.PHONY : Src/grade_school.cpp.s
 
 Src/grains.obj: Src/grains.cpp.obj
 .PHONY : Src/grains.obj
@@ -224,6 +272,30 @@ Src/space_age.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/space_age.cpp.s
 .PHONY : Src/space_age.cpp.s
 
+Src/two_fer.obj: Src/two_fer.cpp.obj
+.PHONY : Src/two_fer.obj
+
+# target to build an object file
+Src/two_fer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/two_fer.cpp.obj
+.PHONY : Src/two_fer.cpp.obj
+
+Src/two_fer.i: Src/two_fer.cpp.i
+.PHONY : Src/two_fer.i
+
+# target to preprocess a source file
+Src/two_fer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/two_fer.cpp.i
+.PHONY : Src/two_fer.cpp.i
+
+Src/two_fer.s: Src/two_fer.cpp.s
+.PHONY : Src/two_fer.s
+
+# target to generate assembly for a file
+Src/two_fer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Exercism.dir\build.make CMakeFiles/Exercism.dir/Src/two_fer.cpp.s
+.PHONY : Src/two_fer.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -257,18 +329,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Exercism
+	@echo ... Src/Hamming.obj
+	@echo ... Src/Hamming.i
+	@echo ... Src/Hamming.s
 	@echo ... Src/Raindrops.obj
 	@echo ... Src/Raindrops.i
 	@echo ... Src/Raindrops.s
 	@echo ... Src/Triangles.obj
 	@echo ... Src/Triangles.i
 	@echo ... Src/Triangles.s
+	@echo ... Src/grade_school.obj
+	@echo ... Src/grade_school.i
+	@echo ... Src/grade_school.s
 	@echo ... Src/grains.obj
 	@echo ... Src/grains.i
 	@echo ... Src/grains.s
 	@echo ... Src/space_age.obj
 	@echo ... Src/space_age.i
 	@echo ... Src/space_age.s
+	@echo ... Src/two_fer.obj
+	@echo ... Src/two_fer.i
+	@echo ... Src/two_fer.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
