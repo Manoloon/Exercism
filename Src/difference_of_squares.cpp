@@ -26,11 +26,8 @@ namespace difference_of_squares
     int square_of_sum(const int num)
     {
         assert(num >=0);
-        std::vector <int> numVec;
-        for(int i=0;i<=num;i++)
-        {
-            numVec.push_back(i);
-        }
+        std::vector <int> numVec(num);
+        std::iota(numVec.begin(),numVec.end(),1);
         const int result = std::accumulate(numVec.begin(),numVec.end(),0);
         return result*result;
     }
@@ -38,11 +35,8 @@ namespace difference_of_squares
     int sum_of_squares(const int num)
     {
         assert(num >=0);
-        std::vector <int> numVec;
-        for(int i=0;i<=num;i++)
-        {
-            numVec.push_back(i);
-        }
+        std::vector <int> numVec(num);
+        std::iota(numVec.begin(),numVec.end(),1);
         return std::inner_product( numVec.begin(), numVec.end(), numVec.begin(), 0 );
     }
 
