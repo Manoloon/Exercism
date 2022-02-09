@@ -1,8 +1,10 @@
 #include <iostream>
 #include <string>
+#include "Src/hexadecimal.h"
 
 int main()
 {
+    std::cout << hexadecimal::convert("abfeg");
     /**
     for(auto i : school_.roster())
     {
