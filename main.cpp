@@ -4,7 +4,7 @@
 
 int main()
 {
-    std::cout << hexadecimal::convert("abfeg");
+    std::cout << "0x" << hexadecimal::convert("19ace");
     /**
     for(auto i : school_.roster())
     {

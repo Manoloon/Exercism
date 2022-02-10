@@ -1,5 +1,6 @@
 //
 // Created by Manoloon on 04/02/2022.
+// Using C++ ver 17.0
 //
 /**
  * Convert a hexadecimal number, represented as a string (e.g. "10af8c"), to its decimal equivalent using first principles
@@ -10,13 +11,11 @@
 #ifndef EXERCISM_HEXADECIMAL_H
 #define EXERCISM_HEXADECIMAL_H
 #include <string_view>
-#include <string>
 
 namespace hexadecimal
 {
-    int PerfConvert(const std::string_view & toConvert);
-    std::string convert(const std::string & toConvert);
-    bool is_valid(const std::string &str);
+    unsigned int convert(const std::string_view & toConvert);
+    bool is_valid(const std::string_view &str);
 }
 
 #endif //EXERCISM_HEXADECIMAL_H

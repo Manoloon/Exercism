@@ -1,43 +1,32 @@
 //
 // Created by Manoloon on 04/02/2022.
 //
-
 #include "hexadecimal.h"
-#include <charconv>
-#include <iostream>
-#include <sstream>
+#include <algorithm>
+#include <numeric>
 
 namespace hexadecimal
 {
-    std::string convert(const std::string & toConvert)
+    unsigned int convert(const std::string_view & toConvert)
     {
-        std::stringstream ss;
         if(!is_valid(toConvert))
         {
-            throw std::invalid_argument("not an Hexadecimal number");
-        }
-        for(const auto &i : toConvert)
-        {
-            ss << std::hex << i;
-        }
-        std::string result = ss.str();
-        return "0x"+result;
-    }
-
-    bool is_valid(const std::string &str)
-    {
-        return str.find_first_not_of("0123456789abcdef") == std::string::npos;
-    }
-
-    int PerfConvert(const std::string_view &toConvert)
-    {
-        int number;
-        auto toInt = std::from_chars(toConvert.data(), toConvert.data() + toConvert.size(), number,16);
-        if (toInt.ec == std::errc::invalid_argument)
-        {
-            std::cout << "Could not convert.\n";
             return 0;
         }
-        return number;
+        return std::accumulate(toConvert.begin(),toConvert.end(), 0,
+                               [](auto acc, char c)
+                               {
+                                    acc *= 16;
+                                    if('a' <= c && c <= 'f')
+                                        return acc + c - 'a' + 10;
+                                    if('A' <= c && c <= 'F')
+                                        return acc + c - 'A' + 10;
+                                    return acc + c - '0';
+                               });
+    }
+
+    bool is_valid(const std::string_view &str)
+    {
+        return str.find_first_not_of("0123456789abcdef") == std::string_view::npos;
     }
 }
