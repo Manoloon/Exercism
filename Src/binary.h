@@ -28,7 +28,7 @@ namespace binary
 {
     int PerfConvert(const std::string_view & toConvert);
     int convert(const std::string & toConvert);
-    bool is_digits(const std::string &str);
+   // bool is_digits(const std::string &str);
 }
 
 #endif //EXERCISM_BINARY_H

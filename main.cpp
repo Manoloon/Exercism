@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
-#include "Src/hexadecimal.h"
+#include "Src/binary.h"
 
 int main()
 {
+    std::cout << binary::convert("10001101000");
     /**
     for(auto i : school_.roster())
     {

@@ -9,6 +9,11 @@
 
 namespace binary
 {
+    bool is_digits(const std::string &str)
+    {
+        return str.find_first_not_of("0123456789") == std::string::npos;
+    }
+
     int convert(const std::string & toConvert)
     {
         if(!is_digits(toConvert))
@@ -29,11 +34,6 @@ namespace binary
             integer /= 10;
         }
         return decimal;
-    }
-
-    bool is_digits(const std::string &str)
-    {
-        return str.find_first_not_of("0123456789") == std::string::npos;
     }
 
     int PerfConvert(const std::string_view &toConvert)
