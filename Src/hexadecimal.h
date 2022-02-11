@@ -14,8 +14,7 @@
 
 namespace hexadecimal
 {
-    unsigned int convert(const std::string_view & toConvert);
-    bool is_valid(const std::string_view &str);
+    int convert(const std::string_view toConvert);
 }
 
 #endif //EXERCISM_HEXADECIMAL_H
