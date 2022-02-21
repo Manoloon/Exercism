@@ -2,6 +2,7 @@
 Exercism cpp problems.
 https://exercism.org/profiles/Manoloon
 # Easy
+* Amstrong Numbers : An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits.
 * Binary : onvert a binary number, represented as a string (e.g. '101010'), to its decimal equivalent using first principles.
 * Collatz conjeture : Take any positive integer n. If n is even, divide n by 2 to get n / 2. If n is odd, multiply n by 3 and add 1 to get 3n + 1.
 * Difference of Squares : Find the difference between the square of the sum and the sum of the squares of the first N natural numbers.
