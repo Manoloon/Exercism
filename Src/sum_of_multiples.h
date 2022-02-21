@@ -3,16 +3,26 @@
 //
 /**
  * Instructions
+ * Dado un numero, encuentra la suma de todos los multiplos unicos de ciertos numeros hasta dicho numero sin incluirlo.
+ * Si listamos todos los naturales menores a 20 que son multiplos de 3 y 5, obtenemos : 3,5,6,9,10,12,15 y 18.
+ * La suma de estos es 78.
 Given a number, find the sum of all the unique multiples of particular numbers up to but not including that number.
 If we list all the natural numbers below 20 that are multiples of 3 or 5, we get 3, 5, 6, 9, 10, 12, 15, and 18.
 The sum of these multiples is 78.
  */
 #ifndef EXERCISM_SUM_OF_MULTIPLES_H
 #define EXERCISM_SUM_OF_MULTIPLES_H
+#include <vector>
+struct vec
+{
+    int x=0;
+    int y=0;
+    int z=0;
+};
 
-
-namespace sum_of_multiples {
-
+namespace sum_of_multiples
+{
+    int to(const vec &multipliers,const int N=0);
 }
 /**
  * REQUIRE(0 == sum_of_multiples::to({3, 5}, 0));
