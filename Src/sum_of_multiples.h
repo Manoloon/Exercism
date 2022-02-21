@@ -13,16 +13,9 @@ The sum of these multiples is 78.
 #ifndef EXERCISM_SUM_OF_MULTIPLES_H
 #define EXERCISM_SUM_OF_MULTIPLES_H
 #include <vector>
-struct vec
-{
-    int x=0;
-    int y=0;
-    int z=0;
-};
-
 namespace sum_of_multiples
 {
-    int to(const vec &multipliers,const int N=0);
+    int to(const std::vector<int> &multipliers,const int N=0);
 }
 /**
  * REQUIRE(0 == sum_of_multiples::to({3, 5}, 0));
