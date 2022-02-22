@@ -1,9 +1,17 @@
 #include <iostream>
 #include <string>
-#include "Src/Armstrong_Numbers.h"
+#include "Src/pascal_triangle.h"
 
 int main()
 {
-   std::cout << armstrong_numbers::is_armstrong_number(153);
+    const std::vector<std::vector<int>> expected{{11}};
+    std::vector<std::vector<int>> actual = pascal_triangle::generate_rows(6);
+    std::cout << "result :" << (expected == actual) << std::endl;
+    for (auto it = actual.begin(); it != actual.end(); ++it) {
+        for(auto& element : *it)
+        {
+            std::cout << element << std::endl;
+        }
+    }
    return 0;
 }
