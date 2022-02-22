@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-#include "Src/sum_of_multiples.h"
+#include "Src/Armstrong_Numbers.h"
 
 int main()
 {
-   std::cout << sum_of_multiples::to({3,5}, 20);
+   std::cout << armstrong_numbers::is_armstrong_number(9926314);
    return 0;
 }

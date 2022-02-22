@@ -13,16 +13,15 @@ Write some code to determine whether a number is an Armstrong number.
 #ifndef EXERCISM_ARMSTRONG_NUMBERS_H
 #define EXERCISM_ARMSTRONG_NUMBERS_H
 
-
 namespace armstrong_numbers
 {
-
-};
+   bool is_armstrong_number(int newNumber);
+}
 /**
  * REQUIRE(armstrong_numbers::is_armstrong_number(0));
  * REQUIRE(armstrong_numbers::is_armstrong_number(5));
  * REQUIRE_FALSE(armstrong_numbers::is_armstrong_number(10));
- * EQUIRE(armstrong_numbers::is_armstrong_number(153));
+ * REQUIRE(armstrong_numbers::is_armstrong_number(153));
  * REQUIRE_FALSE(armstrong_numbers::is_armstrong_number(100));
  * REQUIRE(armstrong_numbers::is_armstrong_number(9474));
  * REQUIRE_FALSE(armstrong_numbers::is_armstrong_number(9475));
