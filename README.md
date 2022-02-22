@@ -2,6 +2,7 @@
 Exercism cpp problems.
 https://exercism.org/profiles/Manoloon
 # Easy
+* VisualPatterns : Draw some patterns with loops.
 * Pascal Triangle : Compute Pascal's triangle up to a given number of rows.
 * Amstrong Numbers : An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits.
 * Binary : onvert a binary number, represented as a string (e.g. '101010'), to its decimal equivalent using first principles.
