@@ -4,6 +4,6 @@
 
 int main()
 {
-   std::cout << armstrong_numbers::is_armstrong_number(9926314);
+   std::cout << armstrong_numbers::is_armstrong_number(153);
    return 0;
 }

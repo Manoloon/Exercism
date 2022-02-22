@@ -15,7 +15,7 @@ Write some code to determine whether a number is an Armstrong number.
 
 namespace armstrong_numbers
 {
-   bool is_armstrong_number(int newNumber);
+   bool is_armstrong_number(const int newNumber);
 }
 /**
  * REQUIRE(armstrong_numbers::is_armstrong_number(0));

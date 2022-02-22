@@ -8,7 +8,7 @@
 #include <iostream>
 namespace armstrong_numbers
 {
-    bool is_armstrong_number(int newNumber)
+    bool is_armstrong_number(const int newNumber)
     {
         if(newNumber <10)
         {
@@ -24,19 +24,19 @@ namespace armstrong_numbers
             Digits.push_back(digit);
             count++;
         }
-        std::vector<int>PowerDigits;
-        for(auto i : Digits)
+        for(auto &&i : Digits)
         {
            std::cout << "Current number is : " << i << std::endl;
            int currentCount = count;
-           int cNumb = i;
+           int PowerNumber = i;
            for(int c=1;c<currentCount;c++)
            {
-                cNumb = cNumb * i;
+               PowerNumber = PowerNumber * i;
            }
-            PowerDigits.push_back(cNumb);
+           i = PowerNumber;
         }
-        int sum = std::accumulate(PowerDigits.begin(),PowerDigits.end(),0);
+        int sum = std::accumulate(Digits.begin(),Digits.end(),0);
+        std::cout << "Current sum is : " << sum<< std::endl;
         return (newNumber == sum);
     }
 }
