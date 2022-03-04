@@ -49,6 +49,21 @@ namespace pascals_triangle
       {1, 7, 21, 35, 35, 21, 7, 1},
       {1, 8, 28, 56, 70, 56, 28, 8, 1},
       {1, 9, 36, 84, 126, 126, 84, 36, 9, 1}
+
+
+      Binomial coefficient :
+      int binomialCoefficient(int rows, int dato)
+    {
+        int res = 1;
+        if (dato > rows - dato)
+            dato = rows - dato;
+        for (int j = 0; j < dato; ++j)
+        {
+            res *= (rows - j);
+            res /= (j + 1);
+        }
+        return res;
+    }
  */
 
 #endif //EXERCISM_PASCAL_TRIANGLE_H

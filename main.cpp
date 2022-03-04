@@ -4,9 +4,7 @@
 
 int main()
 {
-    const std::vector<std::vector<int>> expected{{11}};
     std::vector<std::vector<int>> actual = pascals_triangle::generate_rowsPerf(3);
-    std::cout << "result :" << (expected == actual) << std::endl;
     for (auto it = actual.begin(); it != actual.end(); ++it)
     {
          for(auto& element : *it)
