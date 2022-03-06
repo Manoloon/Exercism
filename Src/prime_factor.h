@@ -29,7 +29,7 @@ You can check this yourself:
 #define EXERCISM_PRIME_FACTOR_H
 #include <vector>
 
-namespace prime_factor
+namespace prime_factors
 {
     std::vector<int> of(int number);
 }
