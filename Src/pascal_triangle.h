@@ -19,7 +19,6 @@ In Pascal's Triangle each number is computed by adding the numbers to the right 
 namespace pascals_triangle
 {
    std::vector<std::vector<int>> generate_rows(int numRows);
-    std::vector<std::vector<int>> generate_rowsPerf(int numRows);
 }
 /*
  *  REQUIRE(expected == actual);

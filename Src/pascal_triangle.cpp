@@ -34,20 +34,4 @@ namespace pascals_triangle
         }
         return Rows;
     }
-
-    std::vector<std::vector<int>> generate_rowsPerf(int numRows)
-    {
-        std::vector<std::vector<int>>Rows;
-        for(int i=0;i<=numRows;i++)
-        {
-            std::vector<int>row(i,1);
-            int prevRow = i-1;
-            for(int a=1;a<i;a++)
-            {
-                row.push_back(a - 1 + prevRow);
-            }
-            Rows.push_back({row});
-        }
-        return Rows;
-    }
 }
