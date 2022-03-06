@@ -1,6 +1,8 @@
 # Exercism
 Exercism cpp problems.
 https://exercism.org/profiles/Manoloon
+# Medium
+* Prime Factor : Compute the prime factors of a given natural number.
 # Easy
 * VisualPatterns : Draw some patterns with loops.
 * Pascal Triangle : Compute Pascal's triangle up to a given number of rows.
