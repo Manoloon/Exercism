@@ -28,7 +28,9 @@ A binary search halves the number of items to check with each iteration, so loca
 namespace binary_search
 {
     //return the position if the item was found
-    size_t find(std::vector<int>data,int item);
+    std::size_t find(const std::vector<int> & data,int item);
+    std::size_t findSorted(std::vector<int>data,int item);
+    std::size_t findSimple(std::vector<int> data,int item);
 }
 /**
  *  const std::vector<int> data {6};
