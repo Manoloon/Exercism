@@ -2,6 +2,7 @@
 Exercism cpp problems.
 https://exercism.org/profiles/Manoloon
 # Medium
+* Binary Search : Implement binary search algorithm
 * Prime Factor : Compute the prime factors of a given natural number.
 # Easy
 * VisualPatterns : Draw some patterns with loops.

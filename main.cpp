@@ -1,14 +1,20 @@
 #include <iostream>
 #include <string>
-#include "Src/prime_factor.h"
+#include <vector>
+#include "Src/binary_search.h"
 
 int main()
 {
-    auto prime = prime_factors::of(901255);
-    for (auto i : prime)
+    const std::vector<int> data {1, 3, 4, 6, 8, 9, 11,212,4312,455,7,154523,4234234,42356,2345,66775,88956};
+    const std::size_t actual = binary_search::find(data, 2);
+    const std::size_t expected = 3;
+    if(actual == expected)
     {
-        std::cout << i << " ";
-        std::cout << "\n";
+        std::cout << "found at position : " << actual<<std::endl;
+    }
+    else
+    {
+        std::cout << "found at position : " << actual<<std::endl;
     }
     /**
     for (auto it = actual.begin(); it != actual.end(); ++it)
