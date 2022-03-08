@@ -2,6 +2,7 @@
 Exercism cpp problems.
 https://exercism.org/profiles/Manoloon
 # Medium
+* Nth Prime : Given a number n, determine what the nth prime is.
 * Binary Search : Implement binary search algorithm
 * Prime Factor : Compute the prime factors of a given natural number.
 # Easy

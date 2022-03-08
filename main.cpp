@@ -1,11 +1,12 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
+#include "Timer.h"
 #include "Instrumentor.h"
 #include "Src/binary_search.h"
+#include "Src/nth_prime.h"
 // macro para profiling ////////////////////////////////////////////////
-#define PROFILING 1
+#define PROFILING 0
 #if PROFILING
 #define PROFILE_SCOPE(name) InstrumentationTimer timer##__LINE__(name)
 #define PROFILE_FUNCTION() PROFILE_SCOPE(__FUNCTION__) // PROFILE_SCOPE(__FUNCSIG__) -> for functions with parameters
@@ -16,6 +17,12 @@
 
 int main()
 {
+    {
+        Timer timer;
+        std::cout << "NTH PRime:" << nth_prime::nth(10001) << std::endl;
+    }
+
+    /**
     // using the new instrumentor for profiling
     Instrumentor::Get().BeginSession("Profile");
 
@@ -35,6 +42,7 @@ int main()
         std::cout << "found at position : " << actual << std::endl;
     }
     Instrumentor::Get().EndSession();
+     */
     /**
     for (auto it = actual.begin(); it != actual.end(); ++it)
     {
