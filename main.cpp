@@ -21,6 +21,10 @@ int main()
         Timer timer;
         std::cout << "NTH PRime:" << nth_prime::nth(10001) << std::endl;
     }
+    {
+        Timer timer;
+        std::cout << "NTH PRime simple:" << nth_prime::nthSimple(10001) << std::endl;
+    }
 
     /**
     // using the new instrumentor for profiling

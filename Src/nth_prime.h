@@ -8,6 +8,7 @@
 
 namespace nth_prime
 {
+    int nthSimple(int number);
     int nth(int number);
 }
 /**

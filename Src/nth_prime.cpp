@@ -10,44 +10,55 @@
  */
 #include "nth_prime.h"
 #include <stdexcept>
+#include <cmath>
 namespace nth_prime
 {
-    bool isPrime(int number)
-    {
-        int counter = 0;
-        for (int j = 2; j < number; j++)
-        {
-            if (number % j == 0)
+    bool isPrime(int number){
+            const int Higher = std::sqrt(number+1);
+            for(int i=2;i<=Higher;++i)
             {
-                counter = 1;
-                break;
+                if(number%i==0){return false;}
+            }
+        return true;
+        }
+    bool isPrimePerf(int n)
+    {
+        const int max_cand = std::sqrt(n+1);
+        for(int i=2;i<=max_cand;++i)
+        {
+            if(n%i==0)
+            {
+                return false;
             }
         }
-        if (counter == 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return true;
     }
-    int nth(int number)
-    {
-        if(number==0){throw std::domain_error ("input is 0");}
+
+    // turn out that this is 1 ms more faster /
+    int nthSimple(int number){
+        if(number<1){throw std::domain_error ("input is 0");}
         int BestNumber = 0;
         int num = 2;
         int count = 1;
         //count 6th prime.
-        while (count<=number)
-        {
-            if (isPrime(num))
-            {
+        while (count<=number){
+            if (isPrime(num)){
                 BestNumber = num;
                 count++;
             }
                 num++;
         }
         return BestNumber;
+    }
+
+    int nth(int number)
+    {
+        if(number<1){throw std::domain_error ("input is 0");}
+        // as counter
+        for (int i = 2; ; ++i) {
+            if (isPrimePerf(i) && (--number == 0)) {
+                return i;
+            }
+        }
     }
 }
