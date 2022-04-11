@@ -5,6 +5,7 @@
 #include "Instrumentor.h"
 #include "Src/binary_search.h"
 #include "Src/nth_prime.h"
+#include "Src/RomanNumerals.h"
 // macro para profiling ////////////////////////////////////////////////
 #define PROFILING 0
 #if PROFILING
@@ -17,6 +18,8 @@
 
 int main()
 {
+std::cout << roman_numerals::convert(324) << std::endl;
+    /**
     {
         Timer timer;
         std::cout << "NTH PRime:" << nth_prime::nth(10001) << std::endl;
