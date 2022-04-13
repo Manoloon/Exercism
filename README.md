@@ -7,6 +7,7 @@ https://exercism.org/profiles/Manoloon
 * Binary Search : Implement binary search algorithm
 * Prime Factor : Compute the prime factors of a given natural number.
 # Easy
+* Hamming : Calculate the Hamming Distance between two DNA strands.
 * VisualPatterns : Draw some patterns with loops.
 * Pascal Triangle : Compute Pascal's triangle up to a given number of rows.
 * Amstrong Numbers : An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits.

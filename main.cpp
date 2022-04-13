@@ -3,9 +3,7 @@
 #include <vector>
 #include "Timer.h"
 #include "Instrumentor.h"
-#include "Src/binary_search.h"
-#include "Src/nth_prime.h"
-#include "Src/RomanNumerals.h"
+#include "Src/Hamming.h"
 // macro para profiling ////////////////////////////////////////////////
 #define PROFILING 0
 #if PROFILING
@@ -18,7 +16,7 @@
 
 int main()
 {
-std::cout << roman_numerals::convert(324) << std::endl;
+//std::cout << hamming::compute("GGACGGATTCTG","AGGACGGATTCT") ;
     /**
     {
         Timer timer;
