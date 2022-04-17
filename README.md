@@ -7,6 +7,7 @@ https://exercism.org/profiles/Manoloon
 * Binary Search : Implement binary search algorithm
 * Prime Factor : Compute the prime factors of a given natural number.
 # Easy
+* nucleotide Count : Given a string representing a DNA sequence, count how many of each nucleotide is present.
 * Hamming : Calculate the Hamming Distance between two DNA strands.
 * VisualPatterns : Draw some patterns with loops.
 * Pascal Triangle : Compute Pascal's triangle up to a given number of rows.

@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <assert.h>
 #include "Timer.h"
 #include "Instrumentor.h"
-#include "Src/Hamming.h"
+#include "Src/nucleotide_count.h"
 // macro para profiling ////////////////////////////////////////////////
 #define PROFILING 0
 #if PROFILING
@@ -16,7 +17,9 @@
 
 int main()
 {
-//std::cout << hamming::compute("GGACGGATTCTG","AGGACGGATTCT") ;
+    const nucleotide_count::counter dna("GGTTGG");
+    std::cout << dna.count('X');
+    //assert(dna.count('X'));
     /**
     {
         Timer timer;
