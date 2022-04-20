@@ -4,7 +4,7 @@
 #include <assert.h>
 #include "Timer.h"
 #include "Instrumentor.h"
-#include "Src/nucleotide_count.h"
+#include "Src/rna_transcription.h"
 // macro para profiling ////////////////////////////////////////////////
 #define PROFILING 0
 #if PROFILING
@@ -14,12 +14,8 @@
 #define PROFILE_SCOPE(name)
 #endif
 /////////////////////////////////////////////////////////////////////////
-
 int main()
 {
-    const nucleotide_count::counter dna("GGTTGG");
-    std::cout << dna.count('X');
-    //assert(dna.count('X'));
     /**
     {
         Timer timer;
