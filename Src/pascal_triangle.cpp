@@ -23,14 +23,12 @@ namespace pascals_triangle
     std::vector<std::vector<int>> generate_rows(int numRows)
     {
         std::vector<std::vector<int>>Rows;
-
         for(int i=0;i<numRows;i++)
         {
             std::vector<int>row;
-            int number=i;
-            for(int a=0;a<=number;a++)
+            for(int a=0;a<=i;a++)
             {
-                row.push_back(binomialCoefficient(number,a));
+                row.push_back(binomialCoefficient(i,a));
             }
             Rows.push_back({row});
         }

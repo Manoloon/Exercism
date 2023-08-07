@@ -1,7 +1,15 @@
 # Exercism
 Exercism cpp problems.
 https://exercism.org/profiles/Manoloon
+# Medium
+* Roman Numerals : Write a function to convert from normal numbers to Roman Numerals.
+* Nth Prime : Given a number n, determine what the nth prime is.
+* Binary Search : Implement binary search algorithm
+* Prime Factor : Compute the prime factors of a given natural number.
 # Easy
+* rna transcription : Given a DNA strand, return its RNA complement (per RNA transcription).
+* nucleotide Count : Given a string representing a DNA sequence, count how many of each nucleotide is present.
+* Hamming : Calculate the Hamming Distance between two DNA strands.
 * VisualPatterns : Draw some patterns with loops.
 * Pascal Triangle : Compute Pascal's triangle up to a given number of rows.
 * Amstrong Numbers : An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits.
