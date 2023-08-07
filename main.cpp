@@ -2,24 +2,14 @@
 #include <string>
 #include "Src/pascal_triangle.h"
 #include "Src/VisualPatterns.h"
+#include "Src/Queen_Attack.h"
 
 int main()
 {
-    /**
-    const std::vector<std::vector<int>> expected{{11}};
-    std::vector<std::vector<int>> actual = pascals_triangle::generate_rows(10);
-    std::cout << "result :" << (expected == actual) << std::endl;
-    for (auto it = actual.begin(); it != actual.end(); ++it)
-    {
-         for(auto& element : *it)
-           {
-               std::cout << element << " ";
-           }
-           std::cout << "\n";
-    }*/
-    VisualPatterns::HalfPyramidLeft(10);
-    VisualPatterns::HalfInvertedPyramidLeft(10);
-    VisualPatterns::FullPyramid(10);
-    VisualPatterns::Square(10);
+    const auto white = std::make_pair(4, 1);
+    const auto black = std::make_pair(2, 5);
+    const queen_attack::chess_board board{white, black};
+    std::cout << "result :" << (white == board.white()) << std::endl;
+    std::cout << "result :" << (black == board.black()) << std::endl;
    return 0;
 }

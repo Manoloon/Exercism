@@ -32,7 +32,9 @@ namespace VisualPatterns
 
     void FullPyramid(const int rows)
     {
-        int count=0,count1=0,k=0;
+        int count=0;
+        int count1=0;
+        int k=0;
         for(int i =1;i<=rows;++i)
         {
             for(int s=1;s<=rows-i;++s)
@@ -65,7 +67,14 @@ namespace VisualPatterns
         {
             for (int j=0;j<rows;++j)
             {
-                std::cout << "#" << " ";
+                if(j%2==0)
+                {
+                    std::cout << "#" << " ";
+                }
+                else
+                {
+                    std::cout << "/" << " ";
+                }
             }
             std::cout << std::endl;
         }

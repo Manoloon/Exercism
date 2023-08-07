@@ -19,7 +19,6 @@ namespace binary
         if(!is_digits(toConvert))
         {
             throw std::invalid_argument("not a digit");
-            return 0;
         }
         std::stringstream intString(toConvert);
         size_t integer;
