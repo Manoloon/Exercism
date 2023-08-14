@@ -6,6 +6,8 @@ https://exercism.org/profiles/Manoloon
 * Nth Prime : Given a number n, determine what the nth prime is.
 * Binary Search : Implement binary search algorithm
 * Prime Factor : Compute the prime factors of a given natural number.
+* Robot Simulator : The robots have three possible movements: turn right, turn left, advance.
+* Circular Buffer : A circular buffer, cyclic buffer or ring buffer is a data structure that uses a single, fixed-size buffer as if it were connected end-to-end.
 # Easy
 * rna transcription : Given a DNA strand, return its RNA complement (per RNA transcription).
 * nucleotide Count : Given a string representing a DNA sequence, count how many of each nucleotide is present.
@@ -25,3 +27,4 @@ https://exercism.org/profiles/Manoloon
 * Sum of Multiples : Given a number, find the sum of all the unique multiples of particular numbers up to but not including that number.
 * Triangles : Determine if a triangle is equilateral, isosceles, or scalene.
 * Two Fer : Given a name, return a string with the message: One for name, one for me.
+* Perfect Number : Determine if a number is perfect, abundant, or deficient based on Nicomachus' (60 - 120 CE) classification scheme for positive integers.
