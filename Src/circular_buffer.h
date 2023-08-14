@@ -43,7 +43,7 @@ namespace circular_buffer
             }
         }
 
-        [[maybe_unused]] void clear() const
+        void clear()
         {
             buffer.clear();
         }
