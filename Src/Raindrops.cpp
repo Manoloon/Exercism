@@ -10,23 +10,14 @@ namespace raindrops
     std::string convert(int newNumber)
     {
         std::string result;
-        if(newNumber%3==0)
+        for(const auto& [factor,string] : Factors)
         {
-            result+="Pling";
+            if(newNumber%factor==0)
+            {
+                result +=string;
+            }
         }
-        if(newNumber%5==0)
-        {
-            result+="Plang";
-        }
-        if(newNumber % 7 == 0)
-        {
-            result+= "Plong";
-        }
-        if(result.empty())
-        {
-            result = std::to_string(newNumber);
-        }
-        return result;
+        return (result.empty()) ? std::to_string(newNumber) : result;
     }
 }
 

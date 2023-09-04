@@ -23,8 +23,15 @@ Examples
 #ifndef EXERCISM_RAINDROPS_H
 #define EXERCISM_RAINDROPS_H
 #include <string>
+#include <vector>
 namespace raindrops {
         std::string convert(int newNumber);
+        const std::vector<std::pair<int,std::string>> Factors =
+        {
+                {3,"Pling"},
+                {5,"Plang"},
+                {7,"Plong"}
+        };
 }
 
 
