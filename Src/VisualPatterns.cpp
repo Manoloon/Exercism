@@ -6,7 +6,7 @@
 #include <iostream>
 namespace VisualPatterns
 {
-    void HalfPyramidLeft(const int rows)
+    void HalfPyramidLeft(int rows)
     {
         for (int i = 0; i < rows; i++)
         {
@@ -18,7 +18,7 @@ namespace VisualPatterns
         }
     }
 
-    void HalfInvertedPyramidLeft(const int rows)
+    void HalfInvertedPyramidLeft(int rows)
     {
         for (int i = rows; i >= 1; i--)
         {
@@ -30,7 +30,7 @@ namespace VisualPatterns
         }
     }
 
-    void FullPyramid(const int rows)
+    void FullPyramid(int rows)
     {
         int count=0;
         int count1=0;
@@ -61,7 +61,7 @@ namespace VisualPatterns
         }
     }
 
-    void Square(const int rows)
+    void Square(int rows)
     {
         for(int i=0;i<rows;++i)
         {

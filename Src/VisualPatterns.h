@@ -8,10 +8,10 @@
 
 namespace VisualPatterns
 {
-    void HalfPyramidLeft(const int rows);
-    void HalfInvertedPyramidLeft(const int rows);
-    void FullPyramid(const int rows);
-    void Square(const int rows);
+    void HalfPyramidLeft(int rows);
+    void HalfInvertedPyramidLeft(int rows);
+    void FullPyramid(int rows);
+    void Square(int rows);
 }
 
 
