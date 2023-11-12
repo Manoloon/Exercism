@@ -1,10 +1,17 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include <vector>
 #include "Src/circular_buffer.h"
+#include "Src/three_sum.h"
 
 int main()
 {
+    std::vector<int> nums ={-1,0,1,2,-1,-4};
+    for(const auto& [a, b, c] : three_sum(nums)) {
+        std::cout << a << ", " << b << ", " << c << std::endl;
+    }
+
     circular_buffer::circular_buffer<int> buffer(2);
     buffer.write(1);
     buffer.overwrite(2);
