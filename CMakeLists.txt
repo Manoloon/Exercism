@@ -9,15 +9,7 @@ add_executable(Exercism main.cpp Src/space_age.cpp Src/space_age.h Src/Triangles
         Src/difference_of_squares.cpp Src/difference_of_squares.h Src/collatz_conjecture.h
         Src/collatz_conjecture.cpp Src/hexadecimal.cpp Src/hexadecimal.h Src/binary.h Src/binary.cpp
         Src/sum_of_multiples.cpp Src/sum_of_multiples.h Src/Armstrong_Numbers.cpp Src/Armstrong_Numbers.h
-<<<<<<< HEAD
-        Src/pascal_triangle.cpp Src/pascal_triangle.h Src/VisualPatterns.cpp Src/VisualPatterns.h
-        Src/Queen_Attack.cpp Src/Queen_Attack.h Src/perfect_numbers.h Src/perfect_numbers.cpp Src/robot_simulator.cpp
-        Src/robot_simulator.h Src/circular_buffer.h Src/log_line.h Src/last_will.h Src/secret_handshake.h
-        Src/largest_series_product.h Src/vehicle_purchase.h
-        Src/atbash_cipher.h Src/troll_the_trolls.h Src/dijkstra_algorithm.h Src/CountBlocksOfOnes.h Src/doctor_data.h)
-=======
         Src/pascal_triangle.cpp Src/pascal_triangle.h
         Src/Queen_Attack.cpp Src/Queen_Attack.h Src/secret_handshake.h
         Src/three_sum.h
 )
->>>>>>> d1043bca41e9bc8d18f4655b3fbbe8665ee8bb0a
