@@ -13,4 +13,4 @@ add_executable(Exercism main.cpp Src/space_age.cpp Src/space_age.h Src/Triangles
         Src/Queen_Attack.cpp Src/Queen_Attack.h Src/perfect_numbers.h Src/perfect_numbers.cpp Src/robot_simulator.cpp
         Src/robot_simulator.h Src/circular_buffer.h Src/log_line.h Src/last_will.h Src/secret_handshake.h
         Src/largest_series_product.h Src/vehicle_purchase.h
-        Src/atbash_cipher.h Src/troll_the_trolls.h Src/dijkstra_algorithm.h)
+        Src/atbash_cipher.h Src/troll_the_trolls.h Src/dijkstra_algorithm.h Src/CountBlocksOfOnes.h Src/doctor_data.h)
