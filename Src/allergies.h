@@ -19,13 +19,16 @@ class allergy_test{
         }
           return false;     
     }
-    std::unordered_set<std::string> get_allergies() const {
+    std::unordered_set<std::string> get_allergies() {
         if(score == 0){
             return {};
         }
         std::unordered_set<std::string> allergiesNames;
         for(const auto& it : allergiesMap){
-            allergiesNames.emplace(it.first);
+            if(score >= it.second){
+                allergiesNames.emplace(it.first);
+                score -= it.second;
+            }           
         }
         return allergiesNames;
     }
@@ -36,6 +39,7 @@ std::unordered_map<std::string,int> allergiesMap{
 {"strawberries",8},{"tomatoes",16},{"chocolate",32},
 {"pollen",64},{"cats",128}};
     };
+    
 }  // namespace allergies
 
 #endif // ALLERGIES_H
