@@ -15,9 +15,9 @@ class allergy_test{
         const auto& it = allergiesMap.find(allergy);
         if(it != allergiesMap.end() && it->second <= score){
             score -=it->second;
-            return true; 
+            return true;
         }
-          return false;     
+          return false;
     }
     std::unordered_set<std::string> get_allergies() {
         if(score == 0){
@@ -28,7 +28,7 @@ class allergy_test{
             if(score >= it.second){
                 allergiesNames.emplace(it.first);
                 score -= it.second;
-            }           
+            }
         }
         return allergiesNames;
     }
@@ -39,7 +39,7 @@ std::unordered_map<std::string,int> allergiesMap{
 {"strawberries",8},{"tomatoes",16},{"chocolate",32},
 {"pollen",64},{"cats",128}};
     };
-    
+
 }  // namespace allergies
 
 #endif // ALLERGIES_H

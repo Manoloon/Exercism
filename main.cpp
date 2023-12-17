@@ -2,31 +2,33 @@
 #include <memory>
 #include <string>
 #include <vector>
-#include "Src/circular_buffer.h"
-#include "Src/three_sum.h"
+#include "Src/allergies.h"
 
 int main()
 {
-    std::vector<int> nums ={-1,0,1,2,-1,-4};
-    for(const auto& [a, b, c] : three_sum(nums)) {
-        std::cout << a << ", " << b << ", " << c << std::endl;
+    allergies::allergy_test score2(248);
+    const std::unordered_set<std::string> lots_of_stuff = {"strawberries", "tomatoes", "chocolate", "pollen", "cats"};
+    std::unordered_set<std::string> score2Allergies = score2.get_allergies();
+    for(auto i : score2Allergies){
+        std::cout <<  i << ", ";
     }
-
-    circular_buffer::circular_buffer<int> buffer(2);
-    buffer.write(1);
-    buffer.overwrite(2);
-    std::cout << buffer.read();
-    std::cout << buffer.read();
-
-   circular_buffer::circular_buffer<std::string> bufferString(3);
-    bufferString.write("hello");
-    bufferString.write("world");
-    bufferString.write("zombies");
-   std::cout << bufferString.read();
-   bufferString.write("pants");
-   bufferString.overwrite("banana");
-   std::cout << bufferString.read();
-   std::cout << bufferString.read();
-   std::cout << bufferString.read();
+    std::cout << std::endl;
+    std::cout << " Require this test16: " << std::endl;
+    for(auto i : lots_of_stuff){
+        std::cout <<  i << ", ";
+    }
+    std::cout << std::endl;
+    const std::unordered_set<std::string> non_allergen = {"eggs", "shellfish", "strawberries", "tomatoes",
+                                                          "chocolate", "pollen", "cats"};
+    allergies::allergy_test score3(509);
+    std::unordered_set<std::string> score3Allergies = score3.get_allergies();
+    for(auto i : score3Allergies){
+        std::cout <<  i << ", ";
+    }
+    std::cout << std::endl;
+    std::cout << " Require this Test18: " << std::endl;
+    for(auto i : non_allergen){
+        std::cout <<  i << ", ";
+    }
    return 0;
 }
