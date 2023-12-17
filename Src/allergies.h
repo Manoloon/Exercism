@@ -24,10 +24,11 @@ class allergy_test{
             return {};
         }
         std::unordered_set<std::string> allergiesNames;
+        int remainScore = score;
         for(const auto& it : allergiesMap){
-            if(score >= it.second){
+            if(remainScore >= it.second){
                 allergiesNames.emplace(it.first);
-                score -= it.second;
+                remainScore -= it.second;
             }
         }
         return allergiesNames;
