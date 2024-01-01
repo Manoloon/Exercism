@@ -3,9 +3,11 @@
 #include <string>
 #include <vector>
 #include "Src/allergies.h"
+#include "Src/trinary.h"
 
 int main()
 {
+    std::cout << trinary::to_decimal("carrot");
     allergies::allergy_test score2(248);
     const std::unordered_set<std::string> lots_of_stuff = {"strawberries", "tomatoes", "chocolate", "pollen", "cats"};
     std::unordered_set<std::string> score2Allergies = score2.get_allergies();
