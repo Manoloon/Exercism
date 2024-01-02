@@ -4,9 +4,11 @@
 #include <vector>
 #include "Src/allergies.h"
 #include "Src/trinary.h"
+#include "Src/RomanNumerals.h"
 
 int main()
 {
+    std::cout << roman_numerals::convert(3999);
     std::cout << trinary::to_decimal("carrot");
     allergies::allergy_test score2(248);
     const std::unordered_set<std::string> lots_of_stuff = {"strawberries", "tomatoes", "chocolate", "pollen", "cats"};
