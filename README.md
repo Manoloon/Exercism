@@ -2,14 +2,25 @@
 Exercism cpp problems.
 https://exercism.org/profiles/Manoloon
 # Medium
+* Sieve : Your task is to create a program that implements the Sieve of Eratosthenes algorithm to find prime numbers.
 * Roman Numerals : Write a function to convert from normal numbers to Roman Numerals.
 * Nth Prime : Given a number n, determine what the nth prime is.
 * Binary Search : Implement binary search algorithm
 * Prime Factor : Compute the prime factors of a given natural number.
 * Robot Simulator : The robots have three possible movements: turn right, turn left, advance.
 * Circular Buffer : A circular buffer, cyclic buffer or ring buffer is a data structure that uses a single, fixed-size buffer as if it were connected end-to-end.
+- 
 # Easy
-* rna transcription : Given a DNA strand, return its RNA complement (per RNA transcription).
+* Darts : Write a function that returns the earned points in a single toss of a Darts game.
+* Trinary : Convert a trinary number, represented as a string (e.g. '102012'), to its decimal equivalent using first principles.
+* Atbash Cipher : Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.
+* Allergies : Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
+* Leap : Given a year, report if it is a leap year.
+* Reverse String : Reverse a string, for example: input: "cool" output: "looc".
+* Nucleotide Count : Given a string representing a DNA sequence, count how many of each nucleotide is present.
+* Queen Attack : Given the position of two queens on a chess board, indicate whether or not they are positioned so that they can attack each other.
+* Secret Handshake : Convert a number between 1 and 31 to a sequence of actions in the secret handshake.
+* RNA Transcription : Given a DNA strand, return its RNA complement (per RNA transcription).
 * nucleotide Count : Given a string representing a DNA sequence, count how many of each nucleotide is present.
 * Hamming : Calculate the Hamming Distance between two DNA strands.
 * VisualPatterns : Draw some patterns with loops.
