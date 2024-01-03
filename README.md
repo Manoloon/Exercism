@@ -8,6 +8,7 @@ https://exercism.org/profiles/Manoloon
 * Disjkstra Algorithm : is an algorithm for finding the shortest paths between nodes in a weighted graph.
 * Nth Prime : Given a number n, determine what the nth prime is.
 * Prime Factor : Compute the prime factors of a given natural number.
+* Prime Numbers : print n prime numbers.
 * Robot Simulator : The robots have three possible movements: turn right, turn left, advance.
 * Roman Numerals : Write a function to convert from normal numbers to Roman Numerals.
 * Sieve : Your task is to create a program that implements the Sieve of Eratosthenes algorithm to find prime numbers.

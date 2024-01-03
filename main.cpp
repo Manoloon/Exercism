@@ -5,9 +5,12 @@
 #include "Src/allergies.h"
 #include "Src/trinary.h"
 #include "Src/RomanNumerals.h"
+#include "Src/PrimeNumbers.h"
 
 int main()
 {
+    PrimeNumbers::printFirst(100);
+
     std::cout << roman_numerals::convert(3999);
     std::cout << trinary::to_decimal("carrot");
     allergies::allergy_test score2(248);
