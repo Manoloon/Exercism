@@ -6,6 +6,7 @@
 #include "Src/trinary.h"
 #include "Src/RomanNumerals.h"
 #include "Src/PrimeNumbers.h"
+#include "Src/pop_count.h"
 
 int main()
 {

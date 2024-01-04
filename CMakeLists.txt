@@ -12,4 +12,4 @@ add_executable(Exercism main.cpp Src/space_age.cpp Src/space_age.h Src/Triangles
         Src/pascal_triangle.cpp Src/pascal_triangle.h
         Src/Queen_Attack.cpp Src/Queen_Attack.h Src/secret_handshake.h
         Src/three_sum.h
-        Src/allergies.h Src/trinary.h Src/PrimeNumbers.h)
+        Src/allergies.h Src/trinary.h Src/PrimeNumbers.h Src/pop_count.h)

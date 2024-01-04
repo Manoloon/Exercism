@@ -32,6 +32,7 @@ https://exercism.org/profiles/Manoloon
 * Pangram : Determine if a sentence is a pangram.
 * Pascal Triangle : Compute Pascal's triangle up to a given number of rows.
 * Perfect Number : Determine if a number is perfect, abundant, or deficient based on Nicomachus' (60 - 120 CE) classification scheme for positive integers.
+* Pop Count : count the number of 1 bits in the binary representation of a number.
 * Queen Attack : Given the position of two queens on a chess board, indicate whether or not they are positioned so that they can attack each other.
 * Raindrops : Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors.
 * Reverse String : Reverse a string, for example: input: "cool" output: "looc".
