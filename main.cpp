@@ -7,9 +7,12 @@
 #include "Src/RomanNumerals.h"
 #include "Src/PrimeNumbers.h"
 #include "Src/pop_count.h"
+#include "Src/Scrabble_score.h"
 
 int main()
 {
+    std::count << scrabble_score::score("a") << std::endl;
+    /*
     PrimeNumbers::printFirst(100);
 
     std::cout << roman_numerals::convert(3999);
@@ -37,6 +40,6 @@ int main()
     std::cout << " Require this Test18: " << std::endl;
     for(auto i : non_allergen){
         std::cout <<  i << ", ";
-    }
+    }*/
    return 0;
 }
