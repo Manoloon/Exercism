@@ -11,7 +11,7 @@
 
 int main()
 {
-    std::count << scrabble_score::score("a") << std::endl;
+    std::cout << scrabble_score::score("street") << std::endl;
     /*
     PrimeNumbers::printFirst(100);
 

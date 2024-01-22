@@ -37,6 +37,7 @@ https://exercism.org/profiles/Manoloon
 * Raindrops : Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors.
 * Reverse String : Reverse a string, for example: input: "cool" output: "looc".
 * RNA Transcription : Given a DNA strand, return its RNA complement (per RNA transcription).
+* Scrabble Score : Given a word, compute the Scrabble score for that word.
 * Secret Handshake : Convert a number between 1 and 31 to a sequence of actions in the secret handshake.
 * Space Age : Given an age in seconds, calculate how old someone would be.
 * Sum of Multiples : Given a number, find the sum of all the unique multiples of particular numbers up to but not including that number.
