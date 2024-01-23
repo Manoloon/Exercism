@@ -7,11 +7,14 @@
 #include "Src/RomanNumerals.h"
 #include "Src/PrimeNumbers.h"
 #include "Src/pop_count.h"
-#include "Src/Scrabble_score.h"
+#include "Src/matching_brackets.h"
+#include "Src/ReverseString.h"
 
 int main()
 {
-    std::cout << scrabble_score::score("street") << std::endl;
+    std::cout << "revert :" << reverse_string::rev_string("robot") << std::endl;
+    bool result = matching_brackets::check("(((185 + 223.85) * 15) - 543)/2");
+    std::cout << "The brackets are " << (result ? "valid" : "invalid");
     /*
     PrimeNumbers::printFirst(100);
 
