@@ -1,14 +1,18 @@
 #include <iostream>
 #include <memory>
 #include <string>
-#include "Src/matching_brackets.h"
-#include "Src/ReverseString.h"
+#include "Src/protein_translation.h"
 
 int main()
 {
+    auto result = protein_translation::proteins("UAGUGG");
+    for(auto r : result){
+        std::cout << r << ", ";
+    }
+    /*
    bool result = matching_brackets::check("(((185 + 223.85) * 15) - 543)/2");
    std::cout << "The brackets are " << (result ? "valid" : "invalid");
-/*
+
    PrimeNumbers::printFirst(100);
 
    std::cout << roman_numerals::convert(3999);

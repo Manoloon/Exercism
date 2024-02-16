@@ -12,6 +12,9 @@ https://exercism.org/profiles/Manoloon
 * Robot Simulator : The robots have three possible movements: turn right, turn left, advance.
 * Roman Numerals : Write a function to convert from normal numbers to Roman Numerals.
 * Sieve : Your task is to create a program that implements the Sieve of Eratosthenes algorithm to find prime numbers.
+* Simple Linked List : Write a prototype of the music player application.
+  For the prototype, each song will simply be represented by a number. Given a range of numbers (the song IDs), create a singly linked list.
+  Given a singly linked list, you should be able to reverse the list to play the songs in the opposite order.
 - 
 # Easy
 * Allergies : Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
@@ -33,6 +36,7 @@ https://exercism.org/profiles/Manoloon
 * Pascal Triangle : Compute Pascal's triangle up to a given number of rows.
 * Perfect Number : Determine if a number is perfect, abundant, or deficient based on Nicomachus' (60 - 120 CE) classification scheme for positive integers.
 * Pop Count : count the number of 1 bits in the binary representation of a number.
+* Proteins Translation : Translate RNA sequences into proteins.
 * Queen Attack : Given the position of two queens on a chess board, indicate whether or not they are positioned so that they can attack each other.
 * Raindrops : Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors.
 * Reverse String : Reverse a string, for example: input: "cool" output: "looc".
