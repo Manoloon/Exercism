@@ -6,6 +6,7 @@ https://exercism.org/profiles/Manoloon
 * Circular Buffer : A circular buffer, cyclic buffer or ring buffer is a data structure that uses a single, fixed-size buffer as if it were connected end-to-end.
 * Difference Of Square : Find the difference between the square of the sum and the sum of the squares of the first N natural numbers
 * Disjkstra Algorithm : is an algorithm for finding the shortest paths between nodes in a weighted graph.
+* List ops : Implement basic list operations.
 * Nth Prime : Given a number n, determine what the nth prime is.
 * Prime Factor : Compute the prime factors of a given natural number.
 * Prime Numbers : print n prime numbers.

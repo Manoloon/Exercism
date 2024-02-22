@@ -1,14 +1,60 @@
 #include <iostream>
 #include <memory>
 #include <string>
-#include "Src/protein_translation.h"
+#include "Src/list_ops.hpp"
 
 int main()
 {
-    auto result = protein_translation::proteins("UAGUGG");
-    for(auto r : result){
-        std::cout << r << ", ";
+    std::vector<int> list = {1,2,3,4};
+    std::vector<int> list2 = {5,6,7,8};
+    std::cout << "Length : " << list_ops::length(list) << std::endl;
+    std::vector<int> input{1, 3, 5, 7};
+    auto append = list_ops::append(list,list2);
+    std::cout << "append : " << std::endl;
+    for(auto i : append){
+        std::cout << i;
     }
+    std::cout << std::endl;
+
+    std::vector<std::vector<int>> lists{{1, 2}, {3}, {}, {4, 5, 6}};
+    auto concat = list_ops::concat(lists);
+    std::cout << "concat : " << std::endl;
+    for(auto i : concat){
+        std::cout << i;
+    }
+    std::cout << std::endl;
+
+	auto lambda_func = [] (int x) { return x + 1;};
+	auto result = list_ops::map(input, lambda_func);
+    std::cout << "map : " << std::endl;
+    for(auto i : result){
+        std::cout << i;
+    }
+    std::cout << std::endl;
+
+	auto filter_func = [] (int x) { return x % 2 == 1;};
+	auto filterRes {list_ops::filter(list, filter_func)};
+    std::cout << "filter : " << std::endl;
+    for(auto i : filterRes){
+        std::cout << i;
+    }
+    std::cout << std::endl;
+
+    auto foldl_func = [] (int x, int y) { return x + y;};
+	auto foldl_res {list_ops::foldl(list, 5, foldl_func)};
+    std::cout << "foldl : " << std::endl;
+    std::cout << foldl_res;
+    std::cout << std::endl;
+
+    auto foldr_func = [] (int acc, int el) { return el + acc;};
+	auto foldr_res {list_ops::foldr(list, 5, foldr_func)};
+    std::cout << "foldr : " << std::endl;
+    std::cout << foldr_res;
+    std::cout << std::endl;
+
+	auto revers {list_ops::reverse(lists)};
+    std::cout << "reverse : " << std::endl;
+    std::cout << std::endl;
     /*
    bool result = matching_brackets::check("(((185 + 223.85) * 15) - 543)/2");
    std::cout << "The brackets are " << (result ? "valid" : "invalid");
