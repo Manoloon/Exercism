@@ -25,8 +25,8 @@ Note, the ordering in which arguments are passed to the fold functions (foldl, f
 
 namespace list_ops {
     template<typename T>
-    std::vector<T> append(std::vector<T> list1, std::vector<T> list2){
-        for(T e : list2){
+    std::vector<T> append(std::vector<T>& list1, std::vector<T>& list2){
+        for(const auto& e : list2){
             list1.emplace_back(e);
         }
         return list1;
@@ -53,7 +53,7 @@ namespace list_ops {
     }
 
     template<typename T>
-    int length(std::vector<T> list) {
+    size_t length(std::vector<T> list) {
         if(list.empty()){return 0;}
         std::vector<T> tail(std::begin(list)+1,std::end(list));
         return 1 + length(tail); 
@@ -70,29 +70,27 @@ namespace list_ops {
 
     template<typename T, typename Func>
     T foldl(std::vector<T> list,T acc,const Func& func){
-        T accumulator = acc;
-        for(auto e : list){
-            accumulator = func(accumulator,e);
-        }
-        return accumulator;
+        if(list.size() == 0) return acc;
+        T head = list[0];
+        std::vector<T> tail(std::begin(list)+1,std::end(list));
+        return foldl(tail,func(acc,head),func);     
     }
 
     template<typename T, typename Func>
     T foldr(std::vector<T> list,T acc,const Func& func){
-        T accumulator = acc;
-        for(size_t i = list.size(); i != SIZE_MAX; --i){
-            accumulator = func(accumulator,list[i-1]);
-        }
-        return accumulator;
+        if(list.size() == 0) return acc;
+        T head = list[0];
+        std::vector<T> tail(std::begin(list)+1,std::end(list));
+        return func(foldr(tail,acc,func),head);
     }
 
     template<typename T>
-    std::vector<T> reverse(const std::vector<T>& lists){
-            // Flatten the vector of vectors into a single vector
-        std::vector<T> flattened = lists;
+    std::vector<T> reverse(const std::vector<T>& list){
+        if(list.empty()) return {};
+        // Flatten the vector of vectors into a single vector
+        std::vector<T> flattened = list;
         // Reverse the flattened vector
         std::reverse(flattened.begin(), flattened.end());
-    
         return flattened;
     }
 }  // namespace list_ops

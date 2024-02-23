@@ -6,10 +6,11 @@
 int main()
 {
     std::vector<int> list = {1,2,3,4};
+    std::vector<int> Emptylist = {};
     std::vector<int> list2 = {5,6,7,8};
     std::cout << "Length : " << list_ops::length(list) << std::endl;
     std::vector<int> input{1, 3, 5, 7};
-    auto append = list_ops::append(list,list2);
+    auto append = list_ops::append(Emptylist,list2);
     std::cout << "append : " << std::endl;
     for(auto i : append){
         std::cout << i;
@@ -47,13 +48,19 @@ int main()
     std::cout << std::endl;
 
     auto foldr_func = [] (int acc, int el) { return el + acc;};
-	auto foldr_res {list_ops::foldr(list, 5, foldr_func)};
+    std::vector<double> floatlist{1.0, 2.0, 3.0, 4.0};
+	auto foldr_floatRes = [] (double acc, double el) { return el / acc;};
+    auto foldr_res {list_ops::foldr(floatlist, 24.0, foldr_floatRes)};
     std::cout << "foldr : " << std::endl;
     std::cout << foldr_res;
     std::cout << std::endl;
 
+    std::vector<int> emptylist{};
 	auto revers {list_ops::reverse(lists)};
     std::cout << "reverse : " << std::endl;
+    // for(auto i : revers){
+    //     std::cout << i;
+    // }
     std::cout << std::endl;
     /*
    bool result = matching_brackets::check("(((185 + 223.85) * 15) - 543)/2");
