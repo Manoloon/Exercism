@@ -34,3 +34,6 @@
 cmake-*
 .vscode
 build
+.vscode/tasks.json
+.vscode/settings.json
+.vscode/launch.json

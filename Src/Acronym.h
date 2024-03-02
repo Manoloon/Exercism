@@ -6,7 +6,7 @@
 namespace acronym {
     std::string acronym(std::string str){
         std::string result;
-        std::regex pattern("\\b([a-zA-Z])");
+        std::regex pattern("[A-Za-z][^-\\s]*");
         
     auto word_begin = std::sregex_iterator(std::begin(str), 
                       std::end(str), 
@@ -17,15 +17,13 @@ namespace acronym {
         for(std::sregex_iterator it = word_begin;it != word_end;++it)
         {
            std::smatch match = *it;
-           // result += std::toupper(match.str(1)[0]);
-           char first_letter = std::toupper(match.str(1)[0]);
-           if (std::isalpha(first_letter)) { // Check if the character is alphabetic
-                result += std::toupper(first_letter);
-            }
+           char first_letter = match.str()[0];
+           result += std::toupper(first_letter);
         }
         return result;
     }
 }  // namespace acronym
+
 void TestSolution(){
     std::string actual = acronym::acronym("Portable Network Graphics");
     std::string expected{"PNG"};
