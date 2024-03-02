@@ -36,5 +36,9 @@ namespace allergies {
             return allergiesPresent;
         }
     };
+    void TestSolution()
+    {
+
+    }
 }  // namespace allergies
 #endif // ALLERGIES_H

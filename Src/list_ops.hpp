@@ -21,6 +21,7 @@ Note, the ordering in which arguments are passed to the fold functions (foldl, f
 #pragma once
 #include <vector>
 #include <numeric>
+#include <iostream>
 #include <algorithm>
 
 namespace list_ops {
@@ -93,4 +94,67 @@ namespace list_ops {
         std::reverse(flattened.begin(), flattened.end());
         return flattened;
     }
+
+    void TestSolution()
+{
+    std::cout << "LIST OPS : TEST SOLUTION\n";
+
+    std::vector<int> list = {1,2,3,4};
+    std::vector<int> Emptylist = {};
+    std::vector<int> list2 = {5,6,7,8};
+    std::cout << "Length : " << list_ops::length(list) << std::endl;
+    std::vector<int> input{1, 3, 5, 7};
+    auto append = list_ops::append(Emptylist,list2);
+    std::cout << "append : " << std::endl;
+    for(auto i : append){
+        std::cout << i;
+    }
+    std::cout << std::endl;
+
+    std::vector<std::vector<int>> lists{{1, 2}, {3}, {}, {4, 5, 6}};
+    auto concat = list_ops::concat(lists);
+    std::cout << "concat : " << std::endl;
+    for(auto i : concat){
+        std::cout << i;
+    }
+    std::cout << std::endl;
+
+	auto lambda_func = [] (int x) { return x + 1;};
+	auto result = list_ops::map(input, lambda_func);
+    std::cout << "map : " << std::endl;
+    for(auto i : result){
+        std::cout << i;
+    }
+    std::cout << std::endl;
+
+	auto filter_func = [] (int x) { return x % 2 == 1;};
+	auto filterRes {list_ops::filter(list, filter_func)};
+    std::cout << "filter : " << std::endl;
+    for(auto i : filterRes){
+        std::cout << i;
+    }
+    std::cout << std::endl;
+
+    auto foldl_func = [] (int x, int y) { return x + y;};
+	auto foldl_res {list_ops::foldl(list, 5, foldl_func)};
+    std::cout << "foldl : " << std::endl;
+    std::cout << foldl_res;
+    std::cout << std::endl;
+
+    auto foldr_func = [] (int acc, int el) { return el + acc;};
+    std::vector<double> floatlist{1.0, 2.0, 3.0, 4.0};
+	auto foldr_floatRes = [] (double acc, double el) { return el / acc;};
+    auto foldr_res {list_ops::foldr(floatlist, 24.0, foldr_floatRes)};
+    std::cout << "foldr : " << std::endl;
+    std::cout << foldr_res;
+    std::cout << std::endl;
+
+    std::vector<int> emptylist{};
+	auto revers {list_ops::reverse(lists)};
+    std::cout << "reverse : " << std::endl;
+    // for(auto i : revers){
+    //     std::cout << i;
+    // }
+    std::cout << std::endl;
+}
 }  // namespace list_ops
