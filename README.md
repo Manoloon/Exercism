@@ -1,7 +1,11 @@
 # Exercism
+
 Exercism cpp problems.
-https://exercism.org/profiles/Manoloon
-# Medium
+
+<https://exercism.org/profiles/Manoloon>
+
+## Medium
+
 * Binary Search : Implement binary search algorithm
 * Circular Buffer : A circular buffer, cyclic buffer or ring buffer is a data structure that uses a single, fixed-size buffer as if it were connected end-to-end.
 * Difference Of Square : Find the difference between the square of the sum and the sum of the squares of the first N natural numbers
@@ -16,8 +20,9 @@ https://exercism.org/profiles/Manoloon
 * Simple Linked List : Write a prototype of the music player application.
   For the prototype, each song will simply be represented by a number. Given a range of numbers (the song IDs), create a singly linked list.
   Given a singly linked list, you should be able to reverse the list to play the songs in the opposite order.
-- 
-# Easy
+
+## Easy
+
 * Allergies : Given a person's allergy score, determine whether or not they're allergic to a given item, and their full list of allergies.
 * Amstrong Numbers : An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits.
 * Atbash Cipher : Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.
@@ -51,3 +56,14 @@ https://exercism.org/profiles/Manoloon
 * Triangles : Determine if a triangle is equilateral, isosceles, or scalene.
 * Trinary : Convert a trinary number, represented as a string (e.g. '102012'), to its decimal equivalent using first principles.
 * VisualPatterns : Draw some patterns with loops.
+
+## build externals
+
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=/path/to/your/desired/installation/directory ..
+cmake -G "MinGW Makefiles" ..
+mingw32-make
+after build
+with admin privileges:
+cmake --build . --target install
